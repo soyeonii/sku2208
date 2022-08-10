@@ -2,7 +2,7 @@ package day02;
 
 import java.util.*;
 
-// StackÀ» is-a -> has-a·Î ±¸Çö
+// Stack is-a -> has-aë¡œ ë³€í™˜
 public class MyStack<E> {
 	Vector<E> vector;
 
@@ -46,7 +46,4 @@ public class MyStack<E> {
 		}
 		return -1;
 	}
-
-	@java.io.Serial
-	private static final long serialVersionUID = 1224463164541339165L;
 }

@@ -9,9 +9,9 @@ public class GoodsApp {
 		camera.setCountStock(30);
 		camera.setCountSold(50);
 		
-		System.out.println("»óÇ°ÀÌ¸§:" + camera.getName());
-		System.out.println("»óÇ°°¡°İ:" + camera.getPrice());
-		System.out.println("Àç°í¼ö·®:" + camera.getCountStock());
-		System.out.println("ÆÈ¸°¼ö·®:" + camera.getCountSold());
+		System.out.println("ìƒí’ˆì´ë¦„:" + camera.getName());
+		System.out.println("ìƒí’ˆê°€ê²©:" + camera.getPrice());
+		System.out.println("ì¬ê³ ìˆ˜ëŸ‰:" + camera.getCountStock());
+		System.out.println("íŒ”ë¦°ìˆ˜ëŸ‰:" + camera.getCountSold());
 	}
 }

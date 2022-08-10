@@ -58,6 +58,6 @@ public class Song {
 
 	public void show() {
 		System.out.println(
-				artist + " " + title + " ( " + album + ", " + year + ", " + track + "¹ø track, " + composer + " ÀÛ°î )");
+				artist + " " + title + " ( " + album + ", " + year + ", " + track + "ë²ˆ track, " + composer + " ìž‘ê³¡ )");
 	}
 }

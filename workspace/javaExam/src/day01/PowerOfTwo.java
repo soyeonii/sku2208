@@ -1,20 +1,19 @@
 package day01;
 
-import java.util.*; // Scanner Å¬·¡½º¸¦ »ç¿ëÇÏ±â À§ÇÔ
-//Scanner Å¬·¡½º¿Í System.in, nextInt() ¸Ş¼Òµå´Â ÃßÈÄ ´Ù·ê °ÍÀÓ
+import java.util.*;
 
 public class PowerOfTwo {
 	public static void main(String[] args) {
-		Scanner stdin = new Scanner(System.in);
-		int result = 1;
-		System.out.print("½Â¼ö: ");
-		int pow = stdin.nextInt();
-		int n = pow;
-		// Q: ¾Æ·¡ while ¹İº¹¹®À» ÀÛ¼ºÇÏ½Ã¿À.
-		while (n > 0) {
-			result *= 2;
-			n--;
+		try (Scanner stdin = new Scanner(System.in)) {
+			int result = 1;
+			System.out.print("ìŠ¹ìˆ˜:");
+			int pow = stdin.nextInt();
+			int n = pow;
+			while (n > 0) {
+				result *= 2;
+				n--;
+			}
+			System.out.println("2ì˜ " + pow + "ì œê³±ê·¼ì€ " + result + "ì…ë‹ˆë‹¤.");
 		}
-		System.out.println("2ÀÇ " + pow + "Á¦°ö±ÙÀº " + result + "ÀÔ´Ï´Ù.");
 	}
 }

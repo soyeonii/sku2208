@@ -2,10 +2,10 @@ package day03;
 
 public class Exam01 {
 	Parent p1 = new Child();
-	Child c1 = (Child) p1; // ¸í½ÃÀû Çüº¯È¯
+	Child c1 = (Child) p1; // ëª…ì‹œì  í˜• ë³€í™˜
 
 	Child c2 = new Child();
-	Parent p2 = c2; // ¹¬½ÃÀû Çüº¯È¯
+	Parent p2 = c2; // ë¬µì‹œì  í˜• ë³€í™˜
 	Object ob1 = c2;
 	Object ob2 = p1;
 }

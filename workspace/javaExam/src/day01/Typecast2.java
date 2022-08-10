@@ -4,12 +4,13 @@ class Typecast2 {
 	public static void main(String args[]) {
 		byte b;
 		int i = 414;
-		float f = (float) 123.456; // ¼öÁ¤
+		float f = (float) 123.456;
+		
 		b = (byte) i;
-		System.out.println("int 414¸¦ byte·Î º¯È¯ : " + b);
+		System.out.println("int 414ë¥¼ byteë¡œ ë³€í™˜ : " + b);
 		i = (int) f;
-		System.out.println("float 123.456À» int·Î º¯È¯: " + i);
+		System.out.println("float 123.456ì„ intë¡œ ë³€í™˜ : " + i);
 		b = (byte) f;
-		System.out.println("float 123.456À» byte·Î º¯È¯: " + b);
+		System.out.println("float 123.456ì„ byteë¡œ ë³€í™˜ : " + b);
 	}
 }

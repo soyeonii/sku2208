@@ -5,10 +5,10 @@ public class SongTest {
 	public static void main(String[] args) {
 		Song song = new Song();
 		
-		song.setTitle("ÁÁÀº³¯");
-		song.setArtist("¾ÆÀÌÀ¯");
+		song.setTitle("ì¢‹ì€ë‚ ");
+		song.setArtist("ì•„ì´ìœ ");
 		song.setAlbum("Real");
-		song.setComposer("ÀÌ¹Î¼ö");
+		song.setComposer("ì´ë¯¼ìˆ˜");
 		song.setYear(2010);
 		song.setTrack(3);
 		

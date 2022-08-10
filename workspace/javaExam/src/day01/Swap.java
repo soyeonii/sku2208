@@ -4,24 +4,22 @@ public class Swap {
 	public static void main(String[] args) {
 		int n1 = 10;
 		int n2 = 30;
-		// Q1: n1°ªÀÌ Ç×»ó Å« °ªÀÌ µÇµµ·Ï, ÇÊ¿äÇÒ °æ¿ì n1°ú n2¸¦ ±³Ã¼ÇÏ¶ó.
-		if (n1 < n2) { // Ãß°¡
+		if (n1 < n2) {
 			int tmp = n1;
 			n1 = n2;
 			n2 = tmp;
 		}
 		System.out.println("n1: " + n1);
 		System.out.println("n2: " + n2);
-		// Q2: ¾Æ·¡¿¡¼­ Àß¸øµÈ °ÍÀ» Ã£¾Æ¼­ ¼öÁ¤ÇÏ¶ó. (¸ô?·ç)
 		int a1 = 20;
 		int a2 = 10;
 		int a3 = 50;
 		if (a1 >= a2) {
 			if (a2 > a3) {
-				System.out.println("a1ÀÌ ÃÖ´ë°ªÀÔ´Ï´Ù.");
+				System.out.println("a1ì´ ìµœëŒ€ê°’ì…ë‹ˆë‹¤.");
 			}
 		} else {
-			System.out.println("a1(" + a1 + ")Àº a2(" + a2 + ")º¸´Ù ÀÛ½À´Ï´Ù.");
+			System.out.println("a1(" + a1 + ")ì€ a2(" + a2 + ")ë³´ë‹¤ ì‘ìŠµë‹ˆë‹¤.");
 		}
 	}
 }

@@ -2,11 +2,11 @@ package day03;
 
 public class B extends A {
 	public B() {
-		System.out.println("»ı¼ºÀÚ B");
+		System.out.println("ìƒì„±ì B");
 	}
 	
 	public B(int x) {
 		super(x);
-		System.out.println("¸Å°³º¯¼ö »ı¼ºÀÚ B" + x);
+		System.out.println("ë§¤ê°œë³€ìˆ˜ ìƒì„±ì B" + x);
 	}
 }

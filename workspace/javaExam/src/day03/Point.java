@@ -29,6 +29,6 @@ public class Point {
 	}
 
 	public void show() {
-		System.out.println("ÁÂÇ¥[x=" + x + ",y=" + y + "]¿¡ Á¡À» ±×·È½À´Ï´Ù.");
+		System.out.println("ì¢Œí‘œ[x=" + x + ",y=" + y + "]ì— ì ì„ ê·¸ë ¸ìŠµë‹ˆë‹¤.");
 	}
 }

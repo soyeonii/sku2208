@@ -2,10 +2,10 @@ package day03;
 
 public class A {
 	public A() {
-		System.out.println("»ı¼ºÀÚ A");
+		System.out.println("ìƒì„±ì A");
 	}
 	
 	public A(int x) {
-		System.out.println("¸Å°³º¯¼ö »ı¼ºÀÚ A" + x);
+		System.out.println("ë§¤ê°œë³€ìˆ˜ ìƒì„±ì A" + x);
 	}
 }

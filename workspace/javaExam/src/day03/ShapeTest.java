@@ -1,7 +1,6 @@
 package day03;
 
 public class ShapeTest {
-
 	public static void main(String[] args) {
 		Point p1 = new Point(2, 5);
 		p1.show();
@@ -11,5 +10,4 @@ public class ShapeTest {
 		p2.setY(23);
 		p2.show();
 	}
-
 }

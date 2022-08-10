@@ -1,21 +1,21 @@
 package day02;
 
 public class User {
-	public static void run(ÀÚµ¿Â÷ c) {
+	public static void run(ìë™ì°¨ c) {
 		c.run();
 	}
-	
-	public static void main(String[] args) {
-		// ºÎ¸ğ´Â ÀÚ½ÄÀ» °¡¸®Å³ ¼ö ÀÖ´Ù.
-		ÀÚµ¿Â÷ c1 = new ¹ö½º();
-		ÀÚµ¿Â÷ c2 = new ½ºÆ÷Ã÷Ä«();
 
-		// ¿À·ù
-		// Bus b1 = new Car();
+	public static void main(String[] args) {
+		// ë¶€ëª¨ëŠ” ìì‹ì„ ê°€ë¦¬í‚¬ ìˆ˜ ìˆë‹¤.
+		ìë™ì°¨ c1 = new ë²„ìŠ¤();
+		ìë™ì°¨ c2 = new ìŠ¤í¬ì¸ ì¹´();
+
+		// ì˜¤ë¥˜
+		// ë²„ìŠ¤ b1 = new ìë™ì°¨();
 
 		c2.run();
-		((½ºÆ÷Ã÷Ä«) c2).open(); // Çü º¯È¯
-		
+		((ìŠ¤í¬ì¸ ì¹´) c2).open(); // í˜• ë³€í™˜
+
 		run(c1);
 		run(c2);
 	}

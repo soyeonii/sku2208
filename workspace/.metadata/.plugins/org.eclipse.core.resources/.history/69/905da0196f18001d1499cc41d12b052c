@@ -1,0 +1,12 @@
+package day03;
+
+public class Parent {
+	Parent p1 = new Child();
+	Child c1 = (Child)p1;
+	
+	Child c2 = new Child();
+	Parent p2 = c2;	// 묵시적 형변환
+	Object ob1 = new Child();
+	Object ob2 = new Parent();
+	
+}

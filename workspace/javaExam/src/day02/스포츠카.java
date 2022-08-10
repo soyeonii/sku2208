@@ -1,6 +1,6 @@
 package day02;
 
-public class ½ºÆ÷Ã÷Ä« extends ÀÚµ¿Â÷ {
+public class ìŠ¤í¬ì¸ ì¹´ extends ìë™ì°¨ {
 	public void run() {
 		System.out.println("SportsCar Run");
 	}
@@ -10,6 +10,6 @@ public class ½ºÆ÷Ã÷Ä« extends ÀÚµ¿Â÷ {
 	}
 
 	public void hootHorn() {
-		System.out.println("¶Ù¶Ù");		
+		System.out.println("ë¹µë¹µ");		
 	}
 }

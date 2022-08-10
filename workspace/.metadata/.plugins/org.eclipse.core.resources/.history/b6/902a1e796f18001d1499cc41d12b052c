@@ -1,0 +1,22 @@
+package day02;
+
+public class User {
+	public static void run(자동차 c) {
+		c.run();
+	}
+	
+	public static void main(String[] args) {
+		// �θ�� �ڽ��� ����ų �� �ִ�.
+		�ڵ��� c1 = new ����();
+		�ڵ��� c2 = new ������ī();
+
+		// ����
+		// Bus b1 = new Car();
+
+		c2.run();
+		((������ī) c2).open(); // �� ��ȯ
+		
+		run(c1);
+		run(c2);
+	}
+}

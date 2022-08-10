@@ -1,0 +1,9 @@
+package day03;
+
+public class Parent {
+	Parent p = new Child();
+	Child c = (Child)p;
+	
+	Child c2 = new Child;
+	
+}

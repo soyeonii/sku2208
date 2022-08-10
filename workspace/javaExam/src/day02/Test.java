@@ -2,7 +2,7 @@ package day02;
 
 public class Test {
 	public static void main(String[] args) {
-		Object o = new ¹ö½º();
-		o = new ½ºÆ÷Ã÷Ä«();
+		Object o = new ë²„ìŠ¤();
+		o = new ìŠ¤í¬ì¸ ì¹´();
 	}
 }

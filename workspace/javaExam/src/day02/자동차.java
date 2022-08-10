@@ -1,6 +1,6 @@
 package day02;
 
-abstract public class ÀÚµ¿Â÷ {
+abstract public class ìë™ì°¨ {
 	public void run() {
 		System.out.println("Run");
 	}

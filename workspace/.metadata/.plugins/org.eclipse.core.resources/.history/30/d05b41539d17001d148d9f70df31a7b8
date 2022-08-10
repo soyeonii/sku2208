@@ -1,0 +1,10 @@
+package day02;
+
+public class User {
+	public static void main(String[] args) {
+		Car c1 = new Bus();
+		Car c2 = new SportsCar();
+		
+		// 부모는 자식을 가리킬 수 있다.
+	}
+}

@@ -1,0 +1,26 @@
+package day02;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Calculator extends JFrame {
+	Calculator() {
+		Container container = getContentPane();
+		container.setLayout(new BorderLayout());
+
+		JTextField textField = new JTextField();
+		container.add(textField, BorderLayout.EAST);
+		
+		setTitle("°è»ê±â");
+		setSize(300, 400);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		new Calculator();
+	}
+}

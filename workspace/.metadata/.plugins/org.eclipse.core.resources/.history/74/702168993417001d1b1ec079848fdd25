@@ -1,0 +1,14 @@
+package day01;
+
+public class test {
+	public static void main(String[] args) {
+		int i = 0;
+		while (i < 10) {
+			if (condition(i)) {
+				continue;
+			}
+			process(s);
+			i++;
+		}
+	}
+}

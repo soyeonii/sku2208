@@ -1,0 +1,19 @@
+package day02;
+
+public class User {
+	public void run(Car c) {
+		
+	}
+	
+	public static void main(String[] args) {
+		// 부모는 자식을 가리킬 수 있다.
+		Car c1 = new Bus();
+		Car c2 = new SportsCar();
+
+		// 오류
+		// Bus b1 = new Car();
+
+		c2.run();
+		((SportsCar) c2).open(); // 형 변환
+	}
+}

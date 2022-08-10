@@ -1,0 +1,15 @@
+package day02;
+
+import javax.swing.JFrame;
+
+public class Calculator extends JFrame {
+	Calculator() {
+		setTitle("°è»ê±â");
+		setSize(300, 400);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Calculator();
+	}
+}

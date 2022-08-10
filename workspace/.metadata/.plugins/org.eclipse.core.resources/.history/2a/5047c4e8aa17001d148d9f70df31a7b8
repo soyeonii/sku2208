@@ -1,0 +1,37 @@
+package day02;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Calculator extends JFrame {
+	String[] labels = { "1", "2", "3", "4" };
+
+	Calculator() {
+		Container c1 = getContentPane();
+		c1.setLayout(new BorderLayout());
+
+		JTextField textField = new JTextField();
+		c1.add(textField, BorderLayout.NORTH);
+
+		Container c2 = new Container();
+		c2.setLayout(new GridLayout());
+		for (String label : labels) {
+			c2.add(new JButton(label));
+		}
+		c1.add(c2, BorderLayout.CENTER);
+
+		setTitle("°è»ê±â");
+		setSize(300, 400);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		new Calculator();
+	}
+}

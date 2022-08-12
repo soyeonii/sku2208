@@ -29,7 +29,7 @@ public class InsertTest {
 
 		// 4. 쿼리 결과를 확인 !!
 		if (resultCount > 0) {
-			System.out.println(resultCount + "건 입력^^");
+			System.out.println(resultCount + "건 입력 ^^");
 		}
 
 		// 5. 접속 종료 !!!! (반드시 !!)

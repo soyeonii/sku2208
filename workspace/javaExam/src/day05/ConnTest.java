@@ -14,9 +14,9 @@ public class ConnTest {
 		Connection conn = DriverManager.getConnection(url, user, password);
 		
 		if (conn != null) {
-			System.out.println("^^");
+			System.out.println("^_^");
 		} else {
-			System.out.println("-_-;;");
+			System.out.println("-_-");
 		}
 		
 		conn.close();

@@ -39,6 +39,7 @@ public class SelectTest {
 				System.out.println();
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 		} finally { // 2. 선언한 자원들을 닫아준다 !!!
 			if (rs != null) {
 				try {

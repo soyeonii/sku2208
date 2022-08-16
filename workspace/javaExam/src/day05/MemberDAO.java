@@ -43,15 +43,94 @@ public class MemberDAO {
 	}
 
 	// 수정
+	public boolean updateMember(MemberDTO member) {
+		boolean flag = false;
+
+		Connection conn = null;
+		PreparedStatement ps = null;
+
+		try {
+			conn = DBUtil.getConnection();
+
+			String sql = "update member set name=?, password=?, email=? where id=?";
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, member.getName());
+			ps.setString(2, member.getPassword());
+			ps.setString(3, member.getEmail());
+			ps.setString(4, member.getId());
+
+			if (ps.executeUpdate() == 1)
+				flag = true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(conn, ps);
+		}
+
+		return flag;
+	}
 
 	// 삭제
+	public boolean deleteMember(String id) {
+		boolean flag = false;
+
+		Connection conn = null;
+		PreparedStatement ps = null;
+
+		try {
+			conn = DBUtil.getConnection();
+
+			String sql = "delete from member where id=?";
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, id);
+
+			if (ps.executeUpdate() == 1)
+				flag = true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(conn, ps);
+		}
+
+		return flag;
+	}
 
 	// 조회(id로 조회)
+	public MemberDTO getMember(String id) {
+		MemberDTO member = new MemberDTO();
+
+		Connection conn = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+
+		try {
+			conn = DBUtil.getConnection();
+
+			String sql = "select name, password, email, join_date from member where id=?";
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, id);
+
+			rs = ps.executeQuery();
+			rs.next();
+
+			member.setId(id);
+			member.setName(rs.getString(1));
+			member.setPassword(rs.getString(2));
+			member.setEmail(rs.getString(3));
+			member.setJoinDate(rs.getString(4));
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(conn, ps, rs);
+		}
+
+		return member;
+	}
 
 	// 전체 조회
 	public List<MemberDTO> getMembers() {
 		List<MemberDTO> memberList = new ArrayList<>();
-		
+
 		// 1. 선언 !! -- 접속(Connection), 쿼리 작성(PreparedStatement), 결과(ResultSet)
 		Connection conn = null;
 		PreparedStatement ps = null;

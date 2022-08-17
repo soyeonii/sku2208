@@ -33,5 +33,4 @@ public class MemberUpdateServlet extends HttpServlet {
 
 		response.sendRedirect("memberList");
 	}
-
 }

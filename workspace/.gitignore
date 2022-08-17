@@ -1,1 +1,8 @@
-/.metadata/
+bin
+.class
+.metadata
+.classpath
+.project
+.settings
+Servers
+finalPJT_2020301054_LeeSoYeon

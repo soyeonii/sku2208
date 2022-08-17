@@ -13,6 +13,8 @@
 	List<MemberDTO> memberList = (List<MemberDTO>) request.getAttribute("memberList");
 	%>
 	<h1>회원 목록!!</h1>
+	<%=request.getAttribute("userId")%>님 hi!!
+	<a href="logout.jsp">로그아웃</a>
 	<table>
 		<th>이름</th>
 		<th>아이디</th>

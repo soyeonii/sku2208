@@ -31,6 +31,6 @@ public class MemberJoinServlet extends HttpServlet {
 		MemberService service = new MemberService();
 		service.joinMember(member);
 		
-		response.sendRedirect("memberList");
+		response.sendRedirect("loginForm.jsp");
 	}
 }

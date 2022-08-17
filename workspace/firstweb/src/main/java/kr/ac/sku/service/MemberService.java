@@ -43,4 +43,15 @@ public class MemberService {
 		else
 			System.out.println("DB 수정 실패");
 	}
+	
+	// 회원 확인
+	public int checkMember(String id, String password) {
+		MemberDTO member = dao.getMember(id);
+		if (member == null)
+			return 1;
+		else if (member.getPassword().equals(password))
+			return 3;
+		else
+			return 2;
+	}
 }

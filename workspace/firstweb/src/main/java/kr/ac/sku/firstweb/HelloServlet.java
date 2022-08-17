@@ -54,5 +54,4 @@ public class HelloServlet extends HttpServlet {
 		}
 		out.print("</body></html>");
 	}
-
 }

@@ -49,6 +49,7 @@ public class MemberDAO {
 	public boolean updateMember(MemberDTO member) {
 		boolean flag = false;
 
+		// 선언
 		Connection conn = null;
 		PreparedStatement ps = null;
 
@@ -100,8 +101,7 @@ public class MemberDAO {
 
 	// 조회(id로 조회)
 	public MemberDTO getMember(String id) {
-		MemberDTO member = new MemberDTO();
-
+		MemberDTO member = null;
 		Connection conn = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -114,13 +114,14 @@ public class MemberDAO {
 			ps.setString(1, id);
 
 			rs = ps.executeQuery();
-			rs.next();
-
-			member.setId(id);
-			member.setName(rs.getString(1));
-			member.setPassword(rs.getString(2));
-			member.setEmail(rs.getString(3));
-			member.setJoinDate(rs.getString(4));
+			if (rs.next()) {
+				member = new MemberDTO();
+				member.setId(id);
+				member.setName(rs.getString(1));
+				member.setPassword(rs.getString(2));
+				member.setEmail(rs.getString(3));
+				member.setJoinDate(rs.getString(4));
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {

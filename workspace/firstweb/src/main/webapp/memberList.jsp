@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>member list</title>
 </head>
 <body>
 	<%
@@ -31,8 +31,8 @@
 			<td><%=member.getPassword()%></td>
 			<td><%=member.getEmail()%></td>
 			<td><%=member.getJoinDate()%></td>
-			<td><a href="memberUpdateForm.jsp?id=<%=member.getId()%>>">수정</a>
-			<td><a href="memberDel.jsp?id=<%=member.getId()%>>">삭제</a>
+			<td><a href="memberUpdateForm.jsp?id=<%=member.getId()%>">수정</a>
+			<td><a href="memberDelete?id=<%=member.getId()%>">삭제</a>
 		</tr>
 		<%
 		}

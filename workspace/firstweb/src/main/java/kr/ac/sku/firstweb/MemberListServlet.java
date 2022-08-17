@@ -31,7 +31,6 @@ public class MemberListServlet extends HttpServlet {
 		request.setAttribute("memberList", memberList);
 
 		RequestDispatcher rd = request.getRequestDispatcher("memberList.jsp");
-		
 		rd.forward(request, response);
 	}
 

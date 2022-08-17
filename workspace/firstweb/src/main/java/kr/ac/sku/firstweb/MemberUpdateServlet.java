@@ -1,9 +1,7 @@
 package kr.ac.sku.firstweb;
 
 import java.io.IOException;
-import java.util.List;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,12 +30,8 @@ public class MemberUpdateServlet extends HttpServlet {
 
 		MemberService service = new MemberService();
 		service.updateMember(member);
-		
-		List<MemberDTO> memberList = service.getMemberList();
-		request.setAttribute("memberList", memberList);
 
-		RequestDispatcher rd = request.getRequestDispatcher("memberList.jsp");
-		rd.forward(request, response);
+		response.sendRedirect("memberList");
 	}
 
 }

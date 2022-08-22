@@ -7,17 +7,16 @@ import org.springframework.stereotype.Component;
 public class MyService {
 	private String name;
 	private int count;
-	
+
 	@Autowired
 	private MyDAO myDao;
-	
-//	public MyService() {
-//	}
-//	
-//	public MyService(MyDAO myDAO) {
-//		this.myDao = myDAO;
-//	}
-	
+
+	/*
+	 * public MyService() { }
+	 * 
+	 * public MyService(MyDAO myDAO) { this.myDao = myDAO; }
+	 */
+
 	public void checkPrint() {
 		myDao.print();
 	}

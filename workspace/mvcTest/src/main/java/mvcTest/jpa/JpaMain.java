@@ -25,7 +25,7 @@ public class JpaMain {
 			 * em.persist(member);
 			 */
 			
-			Member member = em.find(Member.class, "sku10");
+			Member member = em.find(Member.class, "sku1");
 			member.setName("이서경");
 			
 			Todo todo = new Todo();
